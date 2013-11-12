@@ -1,0 +1,5 @@
+*.pdf
+cv.*
+*.aux
+*.synctex*
+*.log
