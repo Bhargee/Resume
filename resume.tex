@@ -1,92 +1,119 @@
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\documentclass[]{bhargee-resume}
 
-\documentclass{resume} % Use the custom resume.cls style
-
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-
-\name{Bhargava Manja} 
-\address{(408)~$\cdot$~806~$\cdot$~3362 \\ manja2@illinois.edu} % Your phone number and email
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+\namesection{Bhargava}{Manja}{ \urlstyle{same}\url{manja.xyz} \\
+\href{mailto:bhargee@manja.xyz}{bhargee@manja.xyz} | 408.806.3362
+}
 
-\begin{rSection}{Education}
+\begin{minipage}[t]{0.33\textwidth} 
 
-{\bf University of Illinois at Urbana-Champaign} \hfill {\em May 2016} \\ 
-Bachelors of Science, Computer Science \\
-Overall GPA: 3.93 \\
-Honors: James Scholar, Dean's List
-\end{rSection}
+\section{Education} 
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+\subsection{University of Illinois Urbana Champaign}
+\descript{BS in Mathematics and Computer Science}
+\location{Expected May 2016 | Cum. GPA: 3.89/4}
+Minor: Electrical Engineering \\
+Dean's List (All Semesters) \\
+James Scholar \\
+ISUR scholar (Undergrad research fellowship), sponsored by SRC
+\sectionsep
 
-\begin{rSection}{Work Experience}
+\section{Coursework}
+\subsection{Graduate}
+Computer Vision \\
+\sectionsep
 
-\begin{rSubsection}{UpThere}{Summer 2014}{Software Development Intern}{Palo
-    Alto, CA}
-\item Built secure public file sharing system from scratch for UpThere's cloud
-    storage product
-\item Work currently deployed in production
-\end{rSubsection}
+\subsection{Undergraduate}
+Data Structures (Honors)\\
+Theory of Computation \\
+Algorithms \\
+Combinatorics \\
+Mathematical Statistics \\
+Mathematical Logic \\
+Programming Languages and Compilers \\
+Computer Architecture \\
+Computer Systems Engineering \\
+Numerical Methods \\
+Security Laboratory \\
+Differential Equations \\
+Virtual Reality \\
+Analog Signal Processing \\
+Robotics \\
+{\footnotesize \textit{\textbf{(Grader) }}} \\
+Security Laboratory \\
+\sectionsep
 
-\begin{rSubsection}{VMware (Nicira R\&D Group)}{Summer 2013}{Software Development Intern}{Palo Alto, CA}
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Java \textbullet{}   C \textbullet{} C++ \textbullet{} Python \\
+\location{Over 1000 lines:}
+x86 \textbullet{} OCaml \textbullet{} \LaTeX \textbullet{} Matlab\\
+\location{Familiar:}
+Android \textbullet{} Scheme \textbullet{} Arduino \textbullet{} MIPS
+\sectionsep
+
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+\section{Experience}
+
+\runsubsection{Runtime Verification}
+\descript{| Undergrad Research Assistant }
+\location{June 2015 – Present | Urbana, IL}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Work with Prof. Grigore Rosu to commercialize formal verification research
+\item Found and helped fix critical bugs in flagship race detector product, RV-Predict
+\item Develop embedded software, reverse engineer CAN bus protocols, and give client/NSF demos for RV-ECU, an application of cutting edge verification to vehicle control unit networks
+\end{tightemize}
+\sectionsep
+
+\runsubsection{UpThere}
+\descript{| Software Engineering Intern }
+\location{May 2014 – Aug 2014 | Palo Alto, CA}
+\begin{tightemize}
+\item Built secure public file sharing system from scratch for UpThere's cloud storage product
+\item All code was reviewed and pushed to production
+\end{tightemize}
+\sectionsep
+
+\runsubsection{VMWare}
+\descript{| Software Engineering Intern}
+\location{May 2013 - Aug 2013 | Palo Alto, CA}
+\begin{tightemize}
 \item Created an automated deployer for arbitrary virtual network topologies in Openstack
-\item  Vastly expanded scope and flexibility of testing by porting Python testbed to Openstack based cloud
-\end{rSubsection}
+\item Vastly expanded scope and flexibility of testing by porting Python testbed to Openstack based cloud
+\end{tightemize}
+\sectionsep
 
-\begin{rSubsection}{National Center for Supercomputing Applications}{Fall 2012 - Spring 2013}{Undergraduate Research Programmer}{Urbana, IL}
-\item Used Scala and Javascript to build a data analysis web application for stem cell researchers
-\item Dealt with large datasets stored in MongoDB
-\end{rSubsection}
+\section{Research}
+\runsubsection{Bretl Research Group}
+\descript{| Undergrad Research Assistant}
+\location{October 2014 – Present}
+Worked with Prof. \textbf{\href{http://aerospace.illinois.edu/directory/profile/tbretl}{Tim Bretl}} to develop software for autonomous vision based drone system for construction site monitoring. Currently doing undergrad thesis under Prof. Bretl, leveraging deep learning techniques to learn and select optimal grips for robotic arms and myoelectric prosthetics. 
+\sectionsep
 
-\begin{rSubsection}{Riverbed Technology}{Summer 2012}{Quality Assurance Engineering Intern}{San Francisco, CA}
-\item Extended an automated testing framework with Python to test the web user interface of Riverbed's flagship product, Steelhead 
-\item Developed and maintained tests for added features and user interface components
-\end{rSubsection}
+\runsubsection{Formal Systems Lab}
+\descript{| Undergraduate Research Assistant}
+\location{April 2014 – Present}
+Worked with Prof. \textbf{\href{http://fsl.cs.illinois.edu/index.php/Grigore_Rosu}{Grigore Rosu}} first as a part of independent study, where I worked on adding rewriting rules for certain optimizations to K, a tool for defining, executing, and analyzing programming languages, type systems, and formal analysis tools. Later I rejoined as a member of Runtime Verification, Prof. Rosu's start up. I work most heavily on RV-ECU, an application of provably correct runtime monitoring to vehicle ECU networks. My work on this project has been submitted for publication.
+\sectionsep
 
-\begin{rSubsection}{Riverbed Technology}{Summer 2012}{IT Intern}{San Francisco, CA}
-\item Worked in a team of 3 technicians to provide hardware and software support for employees at all levels 
-\item Wrote automation scripts that are currently used internally by the Riverbed IT department in San Francisco and Cambridge, Massachusetts
-\end{rSubsection}
+\section{Projects}
+\runsubsection{ChromaTag}
+\location{March 2015 - May 2015}
+Final project for Prof. Derek Hoeim's computer vision class, and undergrad thesis of fellow Bretl Research Group member Austin Walters. We utilized color spaces to greatly improve the speed and accuracy of the AprilTag method of swarm robot localization. More info at http://austingwalters.com/chromatags/
+\sectionsep
 
-\end{rSection}
+\runsubsection{Election Analytics Group}
+\location{October 2012 - March 2014}
+Worked with Prof. \textbf{\href{http://shj.cs.illinois.edu/}{Sheldon Jacobson}} to build a system that scraped polling data and ran his forecasting algorithm, as well as the project's website and display. Mentioned in the Wall Street Journal, amongs others, and correctly predicted all but one electoral vote in 2012 Presidential race, all but one state in 2014 Senate races 
+\sectionsep
 
-\begin{rSection}{Selected Projects}
-
-    \begin{rSubsection}{FernanDOS}{}{}{}
-    \item Worked on a 4 man team to create a full OS kernel (paging, scheduling,
-        shell, etc) for ECE 391
-    \item Features a basic GUI system
-    \item Won Microsoft's class OS competition, as decided by the professors and
-        TAs for the course
-    \end{rSubsection}
-
-    \begin{rSubsection}{Scum}{}{}{}
-    \item Mostly complete Scheme interpreter written in C
-    \item Features support for standard Scheme forms and tail call 
-        optimization
-    \end{rSubsection}
-
-\end{rSection}
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Technical Skills}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages (Proficient) & Python, Java, C, C++, x86, MIPS, Verilog, Scheme,
-    OCaml \\
-Technologies/Tools & Linux, MongoDB, Django, Android, Vim, Git, SVN, \LaTeX \\
-\end{tabular}
-
-\end{rSection}
-
-\end{document}
+\end{minipage} 
+\end{document}  \documentclass[]{article}
